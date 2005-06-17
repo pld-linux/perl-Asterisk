@@ -1,6 +1,6 @@
-#
 %include	/usr/lib/rpm/macros.perl
-Summary:	Perl modules for interfacing with the Asterisk open source pbx system
+Summary:	Perl modules for interfacing with the Asterisk open source PBX system
+Summary(pl):	Modu³y Perla do komunikacji z systemem PBX Asterisk
 Name:		perl-Asterisk
 Version:	0.08
 Release:	0.1
@@ -13,16 +13,18 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_noautoreq	'perl(anything_fake_or_conditional)'
-
 %description
-These are all modules for interfacing with the Asterisk open source pbx system.
+These are all modules for interfacing with the Asterisk open source
+PBX system.
+
+%description -l pl
+Ten pakiet zawiera modu³y do komunikacji z systemem PBX o otwartych
+¼ród³ach Asterisk.
 
 %prep
 %setup -q -n asterisk-perl-%{version}
 
 %build
-# Don't use pipes here: they generally don't work. Apply a patch.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 
@@ -30,7 +32,6 @@ These are all modules for interfacing with the Asterisk open source pbx system.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install \
