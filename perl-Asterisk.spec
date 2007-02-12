@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Perl modules for interfacing with the Asterisk open source PBX system
-Summary(pl):	Modu≥y Perla do komunikacji z systemem PBX Asterisk
+Summary(pl.UTF-8):   Modu≈Çy Perla do komunikacji z systemem PBX Asterisk
 Name:		perl-Asterisk
 Version:	0.08
 Release:	0.1
@@ -17,9 +17,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 These are all modules for interfacing with the Asterisk open source
 PBX system.
 
-%description -l pl
-Ten pakiet zawiera modu≥y do komunikacji z systemem PBX o otwartych
-ºrÛd≥ach Asterisk.
+%description -l pl.UTF-8
+Ten pakiet zawiera modu≈Çy do komunikacji z systemem PBX o otwartych
+≈∫r√≥d≈Çach Asterisk.
 
 %prep
 %setup -q -n asterisk-perl-%{version}
