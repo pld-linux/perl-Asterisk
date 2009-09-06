@@ -2,12 +2,12 @@
 Summary:	Perl modules for interfacing with the Asterisk open source PBX system
 Summary(pl.UTF-8):	Moduły Perla do komunikacji z systemem PBX Asterisk
 Name:		perl-Asterisk
-Version:	0.10
-Release:	0.1
+Version:	1.01
+Release:	1
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://asterisk.gnuinter.net/files/asterisk-perl-%{version}.tar.gz
-# Source0-md5:	27fd83d417c556e83cfe7f5dcb40aba0
+# Source0-md5:	496dd02e5764620b78ce9d7ffabdcf57
 URL:		http://asterisk.gnuinter.net
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
