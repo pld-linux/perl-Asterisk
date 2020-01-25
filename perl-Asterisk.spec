@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.perl
 Summary:	Perl modules for interfacing with the Asterisk open source PBX system
 Summary(pl.UTF-8):	Moduły Perla do komunikacji z systemem PBX Asterisk
 Name:		perl-Asterisk
